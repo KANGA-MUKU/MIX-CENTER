@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header.navbar{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 3rem;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.521);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.28);
+    flex-wrap: wrap; 
+}
+
+.logo a{
+    color: orange;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+.logotipo{
+    border-radius: 15px;
+}
+
+header.navbar nav ul {
+    display: flex;
+}
+
+header.navbar nav li{
+    margin-right: 2rem;
+}
+
+header.navbar nav li a{
+    color: orange;
+    font-size: 1.2rem;
+}
+
+header.navbar nav ul li:last-child{
+    margin-right: 0;
+}
+
+.fundo{
+    background-image: url('../img/bg_4.jpg');
+    height: 100%;
+}
+.Servicos{
+    text-align: center;
+    text-decoration: underline;
+    color: orange;
+}
+
+.Servicos1{
+    text-align: center;
+    color: red;
+}
+
+.texto{
+    color: orange;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.container img{
+
+    height: 300px;
+    margin: 9px;
+    border-radius: 15px;
+    transition: 0.3s all ease-in-out;
+}
+.container img:hover{
+    transform: scale(1.09);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+    background-color: #282828;
+    color: white;
+  
+}
+.horario{
+    justify-content: right;
+    color: red;
+}
+
+.preco{
+    background-color: black;
+    width: 100%;
+    height: 789px;
+}
+
+/* @media (max-width: 462px){ 
+    header.nav{
+        justify-content: center;
+    }
+
+    .container img {
+        max-width: 300px;
+    }
+
+ }*/ 
+
+    /* Css Galeria */
+
+    .controleImagem{
+        
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .ps-item {
+        text-align: center;
+        padding: 40px 30px 52px;
+        border: 1px solid #464646;
+        -webkit-transform: skewY(-4deg);
+        -ms-transform: skewY(-4deg);
+        transform: skewY(-4deg);
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .ps-item h3 {
+        font-size: 28px;
+        color: #ffffff;
+        font-weight: 600;
+        margin-bottom: 16px;
+        -webkit-transform: skewY(4deg);
+        -ms-transform: skewY(4deg);
+        transform: skewY(4deg);
+    }
+
+    ps-item .pi-price {
+        margin-bottom: 30px;
+        -webkit-transform: skewY(4deg);
+        -ms-transform: skewY(4deg);
+        transform: skewY(4deg);
+    }
+
+    .ps-item .pi-price h2 {
+        font-size: 60px;
+        color: #f36100;
+        font-weight: 600;
+    }
+
+    .ps-item .pi-price span {
+        color: #c4c4c4;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+
+    ul, ol {
+        padding: 0;
+        margin: 0;
+    }
+
+
+/* Tabela de Precario */
+.primary-btn {  /* Implementacao do botao */
+    display: inline-block;
+    font-size: 14px;
+    padding: 17px 30px 16px;
+    color: #ffffff;
+    background: #f36100;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hov:hover{
+    background-color: white;
+    color: black;
+    
+}
+.hov:hover h3{
+    background-color: white;
+    color: black;
+}
+
+.fundo1{
+    background-image: url('../img/bg_4.jpg');
+    height: 100%;
+}
+/* Contacto */
+
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+/* Servico */
+
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem 2rem 2rem 2rem;
+}
+.container3 img{
+
+    height: 300px;
+    margin: 9px;
+    border-radius: 15px;
+    width: 270px;
+    /* transition: 0.3s all ease-in-out; */
+}
+
+/* banner de informacao */
+section {
+    height: 550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+    
+/*  RESPONSIVO*/
+
+@media (max-width: 100%){
+    header.nav{
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+
+
