@@ -39,7 +39,7 @@ header.navbar nav ul {
 }
 
 header.navbar nav li{
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 header.navbar nav li a{
@@ -50,6 +50,15 @@ header.navbar nav li a{
 header.navbar nav ul li:last-child{
     margin-right: 0;
 }
+
+.menu-btn i{
+    color: orange;
+    cursor: pointer;
+    display: none;
+    font-size: 25px;
+}
+
+
 
 .fundo{
     background-image: url('../img/bg_4.jpg');
@@ -251,7 +260,68 @@ section {
     background-position: top center;
 }
     
-/*  RESPONSIVO*/
+/*  RESPONSIVO Menu*/
+
+@media (max-width: 920px) {
+    .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #f36100;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+        flex-direction: column;
+
+    }
+    header.navbar nav li a{
+        color: white;
+    }
+
+    nav ul.open{
+        left: 0;
+
+    }
+    header.navbar nav ul li{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    header.navbar nav ul li a{
+        font-size: 20px;
+    }
+}
+/* Fim da responsividade do Menu */
+
+/* Resposividade preco*/
+@media (max-width: 920px) {
+
+    .banner-section{
+        max-height: 200px;
+        max-width: 889px;
+    }
+    .container1{
+        max-width: 60%;
+    }
+    .ps-item{ 
+        max-width: 100%; 
+       
+    } 
+
+    /* .ps-item h3{ */
+        /* max-width: 100px; */
+        /* max-height: 100px; */
+    /* } */
+}
+
+  /* Fim da responsividade */
+
+
 
 @media (max-width: 100%){
     header.nav{
